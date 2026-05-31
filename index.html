@@ -28,7 +28,9 @@
         .section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; text-align: center; }
         .section h2 { font-size: 32px; color: #6e5255; margin-bottom: 40px; }
         
-        .tiktok-wrapper { display: flex; justify-content: center; align-items: center; margin: 0 auto; width: 100%; max-width: 340px; }
+        /* CONTAINER TIKTOK ACTUALIZAT: MAI MARE ȘI CURAT */
+        .tiktok-wrapper { display: flex; justify-content: center; align-items: center; margin: 0 auto; width: 100%; max-width: 450px; box-shadow: 0 8px 25px rgba(110,82,85,0.15); border-radius: 12px; overflow: hidden; background: #000; }
+        
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 20px; }
         .gallery-item { background: #fffcf9; padding: 10px; border-radius: 8px; box-shadow: 0 4px 10px rgba(110,82,85,0.05); border: 1px solid #f6ece3; }
         .gallery img { width: 100%; height: 420px; object-fit: cover; border-radius: 6px; display: block; }
@@ -42,7 +44,6 @@
         .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #e1d3c7; border-radius: 5px; background-color: #fff; color: #4a3f3f; }
         .form-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
         
-        /* Zona Butoane Social Media */
         .social-section { text-align: center; padding: 40px 20px; background: #fffcf9; border-top: 1px solid #f3ebe1; width: 100%; }
         .social-section h3 { color: #6e5255; margin-bottom: 20px; font-size: 22px; }
         .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 800px; margin: 0 auto; }
@@ -74,7 +75,6 @@
         <a href="https://wa.me." target="_blank" class="btn btn-hero-whatsapp">💬 Solicită Consultanță pe WhatsApp</a>
     </section>
 
-    <!-- POZELE AU FOST MUTATE AICI, IMEDIAT SUB BUTONUL PRINCIPAL -->
     <section class="section" style="padding-top: 20px;">
         <h2>Inspirație & Modele Realizate</h2>
         <div class="gallery">
@@ -93,10 +93,11 @@
         </div>
     </section>
 
+    <!-- SECȚIUNEA TIKTOK FIXATĂ: PLAYER PUR, FĂRĂ TEXTE ȘI ETICHETE -->
     <section class="section" style="background-color: #fffdfb; max-width: 100%;">
         <h2>Ultimele noutăți de pe TikTok</h2>
         <div class="tiktok-wrapper">
-            <blockquote class="tiktok-embed" cite="https://tiktok.com" data-video-id="7626833677216992534" style="max-width: 605px;min-width: 325px; margin:0;" > <section> <a target="_blank" title="@plussizeart.com" href="https://tiktok.com">@plussizeart.com</a> Plus Size Fashion Week <a title="mǎrimimari" target="_blank" href="https://tiktok.com">#MǎrimiMari</a> <a title="plussizeromania" target="_blank" href="https://tiktok.com">#PlusSizeRomania</a> <a title="aeya" target="_blank" href="https://tiktok.com">#AEYA</a> <a title="rochiixxl" target="_blank" href="https://tiktok.com">#rochiiXXL</a> <a target="_blank" title="♬ original sound - Plus Size România" href="https://tiktok.com">♬ original sound - Plus Size România</a> </section> </blockquote> <script async src="https://tiktok.com"></script>
+            <iframe src="https://tiktok.com" width="100%" height="700" allow="fullscreen" style="border:none; display:block;"></iframe>
         </div>
     </section>
 
@@ -137,7 +138,19 @@
         </div>
     </section>
 
-    <!-- SECȚIUNE NOUĂ: BUTOANE DE ABONARE SOCIAL MEDIA SUB FORMULAR -->
     <section class="social-section">
         <h3>Urmărește AEYA și Abonează-te</h3>
         <div class="social-buttons">
+            <a href="#" target="_blank" class="social-btn btn-facebook">👍 Facebook</a>
+            <a href="#" target="_blank" class="social-btn btn-instagram">📸 Instagram</a>
+            <a href="https://tiktok.com" target="_blank" class="social-btn btn-tiktok">🎵 TikTok</a>
+            <a href="#" target="_blank" class="social-btn btn-youtube">❤️ YouTube</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AEYA - Rochii Plus Size. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
