@@ -123,30 +123,35 @@ style="max-width:600px;min-width:500px;">
             <form action="https://formsubmit.co/plussizeromania@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="Solicitare nouă AEYA">
 <input type="hidden" name="_captcha" value="false">
-                    <div class="form-group">
-                        <label>Nume Complet</label>
-                        <input type="text" placeholder="Ex: Maria Popescu" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Număr de Telefon</label>
-                        <input type="tel" placeholder="Ex: 07xx xxx xxx" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Dimensiuni Estimative</label>
-                        <div class="form-row">
-                            <input type="number" placeholder="Talie (cm)" min="50" max="200">
-                            <input type="number" placeholder="Înălțime (cm)" min="100" max="220">
-                            <input type="number" placeholder="Greutate (kg)" min="40" max="200">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Ce model sau eveniment ai în vedere?</label>
-                        <textarea rows="4" placeholder="Ex: Rochie de seară lungă pentru o nuntă în toamnă..."></textarea>
-                    </div>
-                    <button type="submit" class="btn" style="border: none; width: 100%; cursor: pointer;">Trimite Solicitarea</button>
-                </form>
-            </div>
-        </div>
+               <div class="form-group">
+    <label>Nume Complet</label>
+    <input type="text" name="Nume" placeholder="Ex: Maria Popescu" required>
+</div>
+
+<div class="form-group">
+    <label>Număr de Telefon</label>
+    <input type="tel" name="Telefon" placeholder="Ex: 07xx xxx xxx" required>
+</div>
+
+<div class="form-group">
+    <label>Dimensiuni Estimative</label>
+
+    <div class="form-row">
+        <input type="number" name="Talie" placeholder="Talie (cm)" min="50" max="200">
+        <input type="number" name="Inaltime" placeholder="Înălțime (cm)" min="100" max="220">
+        <input type="number" name="Greutate" placeholder="Greutate (kg)" min="40" max="200">
+    </div>
+</div>
+
+<div class="form-group">
+    <label>Ce model sau eveniment ai în vedere?</label>
+    <textarea name="Mesaj" rows="4" placeholder="Ex: Rochie de seară lungă pentru o nuntă în toamnă..."></textarea>
+</div>
+
+<button type="button" onclick="trimiteWhatsApp()" class="btn submit-btn"
+style="border:none;width:100%;cursor:pointer;">
+    Trimite Solicitarea
+</button>
     </section>
 
     <section class="social-section">
