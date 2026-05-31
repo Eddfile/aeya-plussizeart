@@ -6,3 +6,58 @@
     margin:auto;
     padding:20px;
 }
+/* STILIZARE SMART PENTRU SOCIAL BAR */
+.social-section { 
+    text-align: center; 
+    padding: 40px 20px; 
+    background: #fffcf9; 
+    border-top: 1px solid #f3ebe1; 
+    width: 100%; 
+}
+.social-section h3 { 
+    color: #6e5255; 
+    margin-bottom: 20px; 
+    font-size: 22px; 
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.social-buttons { 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.social-buttons a { 
+    display: inline-block; 
+    padding: 12px 25px; 
+    border-radius: 25px; 
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: 0.3s; 
+    font-size: 15px; 
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.btn-facebook { 
+    background: #1877F2; 
+}
+.btn-facebook:hover { 
+    background: #145dbf; 
+    transform: translateY(-2px);
+}
+.btn-instagram { 
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+}
+.btn-instagram:hover { 
+    opacity: 0.9; 
+    transform: translateY(-2px);
+}
+.btn-tiktok { 
+    background: #000000; 
+}
+.btn-tiktok:hover { 
+    background: #222; 
+    transform: translateY(-2px);
+}
