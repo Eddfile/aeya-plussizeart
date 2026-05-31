@@ -123,7 +123,7 @@ style="max-width:600px;min-width:500px;">
             <form action="https://formsubmit.co/plussizeromania@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="Solicitare nouă AEYA">
 <input type="hidden" name="_captcha" value="false">
-               <div class="form-group">
+                        <div class="form-group">
     <label>Nume Complet</label>
     <input type="text" name="Nume" placeholder="Ex: Maria Popescu" required>
 </div>
@@ -137,43 +137,76 @@ style="max-width:600px;min-width:500px;">
     <label>Dimensiuni Estimative</label>
 
     <div class="form-row">
-        <input type="number" name="Talie" placeholder="Talie (cm)" min="50" max="200">
-        <input type="number" name="Inaltime" placeholder="Înălțime (cm)" min="100" max="220">
-        <input type="number" name="Greutate" placeholder="Greutate (kg)" min="40" max="200">
+        <input type="number" name="Talie" placeholder="Talie (cm)">
+        <input type="number" name="Inaltime" placeholder="Înălțime (cm)">
+        <input type="number" name="Greutate" placeholder="Greutate (kg)">
     </div>
 </div>
 
 <div class="form-group">
     <label>Ce model sau eveniment ai în vedere?</label>
-    <textarea name="Mesaj" rows="4" placeholder="Ex: Rochie de seară lungă pentru o nuntă în toamnă..."></textarea>
+    <textarea name="Mesaj" placeholder="Ex: Rochie de seară..." rows="4"></textarea>
 </div>
-
-<button type="button" onclick="trimiteWhatsApp()" class="btn submit-btn"
-style="border:none;width:100%;cursor:pointer;">
+...
+<button type="button" onclick="trimiteWhatsApp()" class="btn submit-btn">
     Trimite Solicitarea
 </button>
-    </section>
 
-    <section class="social-section">
-        <h3>Urmărește AEYA și Abonează-te</h3>
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/PlussSizeRomania"
-   target="_blank"
-   class="social-btn btn-facebook">
-    👍 Facebook
-</a>
-            <a href="https://www.instagram.com/plussize.romania/"
-   target="_blank"
-   class="social-btn btn-instagram">
-    📸 Instagram
-</a>
-            <a href="https://www.tiktok.com/@plussizeart.com" target="_blank" class="social-btn btn-tiktok">🎵 TikTok</a>
-        </div>
-    </section>
+</div>
+</div>
 
-    <footer>
-        <p>&copy; 2026 AEYA by Andreea Loredana. Toate drepturile rezervate.</p>
-    </footer>
+</section>
+
+<section class="social-section">
+    <h3>Urmărește AEYA și Abonează-te</h3>
+
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/PlussSizeRomania" target="_blank">👍 Facebook</a>
+        <a href="https://www.instagram.com/plussize.romania/" target="_blank">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@plussizeart.com" target="_blank">🎵 TikTok</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AEYA by Andreea Loredana</p>
+</footer>
+
+<script>
+function trimiteWhatsApp() {
+
+    let nume = document.querySelector('input[name="Nume"]').value;
+    let telefon = document.querySelector('input[name="Telefon"]').value;
+    let talie = document.querySelector('input[name="Talie"]').value;
+    let inaltime = document.querySelector('input[name="Inaltime"]').value;
+    let greutate = document.querySelector('input[name="Greutate"]').value;
+    let mesaj = document.querySelector('textarea[name="Mesaj"]').value;
+
+    if(!nume || !telefon){
+        alert("Completează numele și telefonul!");
+        return;
+    }
+
+    let text =
+`✨ Solicitare AEYA
+
+👤 Nume Complet: ${nume}
+📞 Telefon: ${telefon}
+
+📏 Dimensiuni Estimative:
+- Talie: ${talie || "-"} cm
+- Înălțime: ${inaltime || "-"} cm
+- Greutate: ${greutate || "-"} kg
+
+👗 Model / Eveniment:
+${mesaj || "-"}
+
+📌 Sunt interesată de rochii AEYA.`;
+
+    let url = "https://wa.me/40762532388?text=" + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
